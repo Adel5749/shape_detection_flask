@@ -27,8 +27,8 @@ CORS(app)
 
 @app.route('/')
 def first():
-   return jsonify({'message': 'success root'})
-    # return render_template('detect.html')
+   #return jsonify({'message': 'success root'})
+   return render_template('detect.html')
 
 
 @app.route('/video_feed')
