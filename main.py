@@ -33,8 +33,8 @@ def first():
 
 @app.route('/video_feed')
 def video_feed():
-    return jsonify({'message': 'success video feed'})
-    # return Response(gen(VideoCamera()), mimetype='multipart/x-mixed-replace; boundary=frame')
+    #return jsonify({'message': 'success video feed'})
+    return Response(gen(VideoCamera()), mimetype='multipart/x-mixed-replace; boundary=frame')
 
 
 #New
