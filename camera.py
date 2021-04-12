@@ -15,7 +15,7 @@ class VideoCamera(object):#VIDEO CAMERA FUNCTION OF POLYGON SHAPE DETECTION MODU
 
         cv2.normalize(img_feed, img_feed, 0,450, cv2.NORM_MINMAX)  # INCREASE BRIGHTNESS
 
-        imgG = cv2.cvtColor(img_feed, cv2.COLOR_BGR2GRAY)  # image color settings
+        #imgG = cv2.cvtColor(img_feed, cv2.COLOR_BGR2GRAY)  # image color settings
 
         ret, thrash = cv2.threshold(imgG, 240, 255, cv2.CHAIN_APPROX_NONE)
         contours, hierarchy = cv2.findContours(thrash, cv2.RETR_TREE, cv2.CHAIN_APPROX_NONE)  # contour variables
