@@ -9,6 +9,7 @@ class VideoCamera(object):#VIDEO CAMERA FUNCTION OF POLYGON SHAPE DETECTION MODU
 
     def __del__(self):
         self.video.release()
+        cv2.destroyAllWindows()
 
     def get_frame(self):
         ret,img_feed=self.video.read()
