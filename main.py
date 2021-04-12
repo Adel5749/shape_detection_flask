@@ -43,6 +43,6 @@ app.logger.setLevel(logging.ERROR)
 
 if __name__=="__main__":
     #New
-    app.run(debug=True)
+    app.run()
 
 
