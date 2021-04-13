@@ -30,6 +30,11 @@ def first():
    #return jsonify({'message': 'success root'})
    return render_template('detect.html')
 
+@app.route('/local_camera')
+def local_camera():
+   #return jsonify({'message': 'success root'})
+   return render_template('open_local_camera.html')
+
 
 @app.route('/video_feed')
 def video_feed():
